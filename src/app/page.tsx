@@ -10,6 +10,8 @@ import FilterName from "./components/Filter/FilterName";
 import Character from "./components/Character/Character";
 import Pagination from "./components/Pagination/Pagination";
 
+import "./styles.css";
+
 const CharacterPage = () => {
   const [resultCharacters, setResultCharacters] =
     useState<CharacterResult | null>(null);
@@ -45,14 +47,15 @@ const CharacterPage = () => {
 
   return (
     <div className="characterMainContainer">
-      <h1>Character Page</h1>
-
       <div className="filterMainContainer">
-        <FilterStatus setStatusFilter={setStatusFilter} />
+        <h1>Character Filter</h1>
+        <div className="filtersRow">
+          <FilterStatus setStatusFilter={setStatusFilter} />
 
-        <FilterGender setGenderFilter={setGenderFilter} />
+          <FilterName setNameFilter={setNameFilter} />
 
-        <FilterName setNameFilter={setNameFilter} />
+          <FilterGender setGenderFilter={setGenderFilter} />
+        </div>
       </div>
 
       {loading && <p>Loading...</p>}

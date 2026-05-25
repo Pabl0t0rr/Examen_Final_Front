@@ -1,5 +1,6 @@
 import { CharacterT } from "@/types";
 import { useRouter } from "next/navigation";
+import "./styles.css";
 
 const Character = ({ character }: { character: CharacterT }) => {
   const router = useRouter();

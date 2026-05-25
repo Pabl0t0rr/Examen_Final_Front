@@ -6,6 +6,8 @@ import { AxiosError } from "axios";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
+import "./styles.css";
+
 const CharacterDetail = () => {
   const { id } = useParams();
 

@@ -1,4 +1,4 @@
-import { ChangeEvent } from "react";
+import "./styles.css";
 
 type Props = {
   setStatusFilter: (value: string) => void;

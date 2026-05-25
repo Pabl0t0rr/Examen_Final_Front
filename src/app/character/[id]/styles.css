@@ -1,0 +1,46 @@
+.characterByIdContainer {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+
+  background-color: #365829;
+}
+
+.characterByIdContainer img {
+  border-radius: 25%;
+  height: 250px;
+}
+
+.characterDetailInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  padding: 20px;
+  border-radius: 15px;
+
+  background-color: #69ad53;
+  color: white;
+}
+
+.characterDetailInfo button {
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 8px;
+
+  background-color: #314e1c;
+  color: white;
+
+  cursor: pointer;
+}
+
+.characterDetailInfo button:hover {
+  background-color: #365829;
+}

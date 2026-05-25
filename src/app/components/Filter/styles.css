@@ -1,0 +1,43 @@
+.charaterFilter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.charaterFilter select {
+  min-width: 180px;
+
+  font-size: 16px;
+
+  padding: 10px 14px;
+  border-radius: 8px;
+
+  background-color: #c1f762;
+
+  cursor: pointer;
+}
+
+.charaterFilter input {
+  min-width: 220px;
+
+  font-size: 16px;
+
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.charaterFilter button {
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 8px;
+
+  background-color: #314e1c;
+  color: white;
+
+  cursor: pointer;
+}
+
+.charaterFilter button:hover {
+  background-color: #365829;
+}

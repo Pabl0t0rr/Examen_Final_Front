@@ -1,0 +1,29 @@
+.characterContainer {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 10px;
+  gap: 25px;
+
+  background-color: #69ad53;
+  border-radius: 25px;
+
+  cursor: pointer;
+}
+
+.characterContainer img {
+  border-radius: 50%;
+  height: 150px;
+}
+
+.characterInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+}
