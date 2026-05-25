@@ -24,6 +24,14 @@ const CharacterDetail = () => {
       .finally(() => setLoading(false));
   });
 
+  if (loading)
+    return (
+      <div className="loaderContainer">
+        <div className="loader"></div>
+        <div className="textLoader">Loading...</div>
+      </div>
+    );
+
   return (
     <div className="characterByIdContainer">
       <img src={character?.image} />

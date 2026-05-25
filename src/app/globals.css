@@ -47,3 +47,36 @@ a {
     color-scheme: dark;
   }
 }
+
+.loaderContainer {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #365829;
+}
+
+.loader {
+  border: 8px solid #69ad53;
+  border-top: 8px solid #314e1c;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.textLoader {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  color: #333;
+}

@@ -26,8 +26,6 @@ const CharacterPage = () => {
   const [statusFilter, setStatusFilter] = useState("");
 
   useEffect(() => {
-    setLoading(true);
-
     getCharacters(page, {
       name: nameFilter,
       status: statusFilter,
@@ -44,6 +42,14 @@ const CharacterPage = () => {
         setLoading(false);
       });
   }, [page, nameFilter, statusFilter, genderFilter]);
+
+  if (loading)
+    return (
+      <div className="loaderContainer">
+        <div className="loader"></div>
+        <div className="textLoader">Loading...</div>
+      </div>
+    );
 
   return (
     <div className="characterMainContainer">
